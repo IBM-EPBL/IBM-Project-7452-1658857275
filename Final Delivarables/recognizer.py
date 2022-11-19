@@ -13,7 +13,7 @@ def random_name_generator(n: int) -> str:
 
 
 def recognize(image: bytes) -> tuple:
-    model = load_model(Path("./model/model.h5"))
+    model = load_model(Path("model/model.h5"))
 
     img = Image.open(image).convert("L")
 
