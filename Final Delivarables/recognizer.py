@@ -28,7 +28,8 @@ def recognize(image: bytes) -> tuple:
 
     img2arr = np.array(img)
     img2arr = img2arr / 255.0
-    img2arr = img2arr.reshape(1, 28, 28, 1)
+    # img2arr = img2arr.reshape(1, 28, 28, 1)
+    img2arr = img2arr.reshape(1, 784)
 
     results = model.predict(img2arr)
     best = np.argmax(results, axis=1)[0]

@@ -37,6 +37,17 @@ body {
 	color: rgb(90, 88, 88);
 }
 
+.details {
+    padding-left: 23rem;
+	width: 60%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	background-color: white;
+}
+
 .upload-container {
 	box-shadow: 0 0 20px rgb(172, 170, 170);
 	width: 40rem;
